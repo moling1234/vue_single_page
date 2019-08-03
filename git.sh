@@ -3,13 +3,11 @@
 cd ./
 if test -e .git
 then
-  echo "222"
   read commitText
   git add .
-  git commit -m add "$commitText"
+  git commit -m "$commitText"
   git push
 else
-  echo "111"
   read commitText
   git init
   git add .
